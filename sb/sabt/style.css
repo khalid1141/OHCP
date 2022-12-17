@@ -1,0 +1,6 @@
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform-style: preserve-3d;
+  transform-style: inherit;
+}

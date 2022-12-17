@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleforswabs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navcssedit">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="./logo.png" height="60" alt="CoolBrand" style="margin-left: 50px; ">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav contentinsidenav">
+                        <a href="../../index.html" class="nav-item nav-link active hpac">Home</a>
+                        <a href="../../index.html#productssec" class="nav-item nav-link hpac">Product</a>
+                        <a href="../../index.html#about" class="nav-item nav-link hpac">About Us</a>
+                        <a href="../../index.html#contactus" class="nav-item nav-link hpac">Contact</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="#"
+                            class="nav-item btn btn-outline-dark rounded-pill order-1 order-lg-0 ms-lg-4 getquotecss">Get
+                            Quote</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="box" style="transform: translateX(-60px);" id="mainwhitespace">
+                <div class="parentimg">
+                    <img src="../../img/portfolio/gamjee.png" alt="" class="img1">
+                    <img src="../../img/portfolio/Surgi Pad.jpg" alt="" class="img2">
+                </div>
+                <div class="">
+                    <div class="">
+                        <p></p>
+                    </div>
+                    
+                </div>
+
+                <div class="product__disc">
+                    <div class="product__disc--content">
+                        <div class="disc__content--about">
+                            <h1 id="titleimgdesc">SWABS</h1>
+                            <span id="spanimgdesc">Made out of pure cotton, can be used for infant care,Surgical care, cosmetic and skin care needs</span>
+                            <p id="imgdesc">Sizes: 5cm x 5cm, 7.5cm x 7.5cm Ply: 8, 12, 16</p>
+                        </div>
+
+                        <div class="product__view--more">
+                            <p style="margin-top: 14px;">View All Specifications</p>
+                            <div class="view__more--block"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_buttons">
+                    <button class="btn wishlist">Previous</button>
+                    <button class="btn buy">Next</button>
+                </div>
+            </div>
+        </div>
+        </footer>
+        </a>
+        <script src="vendors/@popperjs/main.js"></script>
+
+    </main>
+    
+</body>
+<script>
+    // console.log(document.getElementsByClassName('img1')[0]) dei eduthodne andha oculus nu word varuthula athu one two three nu varnum andha default words ah eduthuru
+
+    let h1_tag = document.getElementById("titleimgdesc");
+    let span_tag = document.getElementById("spanimgdesc");
+    let p_tag = document.getElementById("imgdesc");
+    
+    window.addEventListener("load", (event) => {
+        console.log(document.getElementById("all"))
+        document.getElementsByClassName('img1')[0].click();
+      });
+
+    document.getElementsByClassName('img1')[0].addEventListener("mouseover",() => {
+        // Default text 
+       h1_tag.innerText = "SWABS";
+       span_tag.innerText = "Made out of pure cotton, can be used for infant care,Surgical care, cosmetic and skin care needs";
+       p_tag.innerText = "Sizes: 5cm x 5cm, 7.5cm x 7.5cm Ply: 8, 12, 16";
+    })
+    document.getElementsByClassName('product__disc')[0].addEventListener("mouseover",() => {
+        // Default text 
+       h1_tag.innerText = "SWABS";
+       span_tag.innerText = "Made out of pure cotton, can be used for infant care,Surgical care, cosmetic and skin care needs";
+       p_tag.innerText = "Sizes: 5cm x 5cm, 7.5cm x 7.5cm Ply: 8, 12, 16";
+    })
+
+
+    document.getElementsByClassName('img2')[0].addEventListener("mouseover",() => {
+        h1_tag.innerText = "ROLLER GAUZE / BANDAGE";
+        span_tag.innerText = "A Roller gauze is super absorbent, non-linting and used as additional protector to a wound by preventing spread of a infection and holding the dressing in place.";
+        p_tag.innerText = "Sizes: 5cm, 7.5cm, 10cm, 15cm";
+     })
+
+</script>
+</html>
